@@ -1,0 +1,65 @@
+# Jekyll site configuration using the "Slate" GitHub Pages theme
+# Replace values in <> with your own info.
+
+title: "Your Site Title"
+description: "Short description for SEO / social"
+# Set the full URL (no trailing slash). For a user/organization site use "https://<username>.github.io"
+# For a project site set url to the site host and set baseurl to the repo name (e.g. "/my-repo")
+url: "https://<your-username>.github.io"
+baseurl: "" # set to "/repo-name" if publishing to a project page
+
+# Use the GitHub Pages "Slate" theme via remote_theme
+remote_theme: pages-themes/slate@v0
+
+# Plugins commonly used with GitHub Pages sites
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Markdown / kramdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Permalinks & pagination
+permalink: /:categories/:title/
+paginate: 10
+
+# Collections (optional)
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults for front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Your Name"
+
+# Files and directories to exclude from the build
+exclude:
+  - README.md
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+
+# Extra files to include in the site
+include:
+  - ".htaccess"
+
+# Social / SEO placeholders
+twitter: your_twitter_handle
+github: "<your-username>" # used by some themes/plugins
+
+# Optional navigation / theme customizations (Slate supports a simple nav)
+# navigation:
+#   - title: "Home"
+#     url: "/"
+#   - title: "Docs"
+#     url: "/docs/"
