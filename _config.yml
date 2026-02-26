@@ -5,7 +5,7 @@ title: "Your Site Title"
 description: "Short description for SEO / social"
 # Set the full URL (no trailing slash). For a user/organization site use "https://<username>.github.io"
 # For a project site set url to the site host and set baseurl to the repo name (e.g. "/my-repo")
-url: "https://<your-username>.github.io"
+url: "https://krbeverx.github.io"
 baseurl: "" # set to "/repo-name" if publishing to a project page
 
 # Use the GitHub Pages "Slate" theme via remote_theme
